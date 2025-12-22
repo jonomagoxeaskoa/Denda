@@ -9,7 +9,6 @@
         <img src="img/logoa.jpg" alt="logoa">
         <h1>Denda</h1>
     </header>
-<body>
 
 
 <section id="menu-btn">
@@ -20,8 +19,7 @@
 <nav id="menu">
     <ul>
         <a href="index.html">Hasiera</a>
-        <a href="katalogoa.html">Katalogoa</a>
-        <a href="kontua.html">Kontua</a>
+        <a href="kontaktua.html">Kontua</a>
     </ul>
 </nav>
 
@@ -38,7 +36,7 @@ menuBtn.addEventListener('click', () => {
 });
 </script>
 
-<main>
+ <main class="main">
 
     <h2> Katalogoa </h2>
     
@@ -103,9 +101,6 @@ menuBtn.addEventListener('click', () => {
     <p><a href="#">Toaster + Grill + Sandwicher multifuntzionala</a></p>
     </div>
     
-
-    
-      
 
         <div>
             <img src="img/frigorifero_tradizionala.jpg">
@@ -192,18 +187,17 @@ menuBtn.addEventListener('click', () => {
 
 produktuak{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    padding: 20px 0;
+    padding: 20px;
 }
 
 produktuak div {
     background: white;
     padding: 10px;
-    border-radius: 10px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.15);
     text-align: center;
-    transition: 0.2s;
+    
 }
 
 
@@ -213,76 +207,33 @@ produktuak div:hover{
 
 
 
-produktuak img{
-    width: 100%;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-
-
-produktuak p {
-    font-size: 14px;
-    margin-top: 10px;
-    color: #333;
-}
-
-h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #333;
-}
-
 a {
     text-decoration: none;
     color: #0059b3;
     font-weight: bold;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-
-
-main {
-    max-width: 1200px;
-    margin: auto;
-}
-
-
     body{
         max-width: 767px;
         padding: 15px;
         margin: 15px auto; 
         border: 1px solid #ccc;
-
+        border-radius: 10px;
+        background: #f8f8f8;
     }
     header{
-        padding: 1.95%;
-        margin: 1.95%; 
+        display: flex;
+        align-items: center;
+        gap: 200px;
+        padding: 10px;
+        margin: 2%;
         border: 1px solid #ccc;
-        width: 91.63%;
+        background: white;
+        border-radius: 10px;
     }
 
-     h1 {
-            margin: 0px;
-            float:right;
-            position: relative;
-            right: 450px;
-     }
-    
-    .hamburgersa {
-    display: block;
-    width: 3.91%;
-    height: 3px;
-    background-color: rgb(255, 255, 255);
-    margin: 6px;
-    cursor: pointer;
-}
  header img{
-            width: 150px;
+            width: 120px;
         }
 section{
      border: 1px dotted rgb(255, 255, 255);
@@ -291,38 +242,54 @@ section{
 }
 
 nav {
-    display: none; 
-    background-color: #ffffff;
-    max-width: 767px;
+        background-color: #ffffff;
         padding: 1.95% auto;
         margin: 1.95% auto; 
         border: 1px solid #ccc;
         width: 95.50%;
+        border-radius: 10px;
 }
 
 nav ul a {
-    display: block;
-    padding: 1.95% 0;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+        display: block;
+        padding: 1.95% 0;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
 }
 
 nav ul a:hover {
-    background-color: #ddd;
+        background-color: #ddd;
+        nav {
+        background-color: #ffffff;
+        padding: 1.95% auto;
+        margin: 1.95% auto; 
+        border: 1px solid #ccc;
+        width: 95.50%;
+        
+}
+}
+
+.hamburgersa {
+        display: block;
+        width: 3.91%;
+        height: 3px;
+        background-color: rgb(255, 255, 255);
+        margin: 6px;
+        cursor: pointer;
 }
 
 main{
         padding: 5px;
         margin: 1.95%; 
-       border: 1px solid #ccc;
+        border: 1px solid #ccc;
         width: 94.21%;
+        border-radius: 10px;
+        background: white;
        
 
       
     }
     
-    
-
    
 
 
@@ -340,6 +307,28 @@ footer {
     margin: 2%;
     border: 1px solid #ccc;
     }
+
+    #menu-btn {
+    display: none;
+}
+
+nav {
+    display: block;
+}
+
+
+@media (max-width: 767px) {
+    #menu-btn {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        
+    }
+    
+}
+
 
 
 

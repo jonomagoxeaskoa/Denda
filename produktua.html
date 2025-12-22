@@ -21,7 +21,7 @@
     <ul>
         <a href="index.html">Hasiera</a>
         <a href="katalogoa.html">Katalogoa</a>
-        <a href="kontua.html">Kontua</a>
+        <a href="kontaktua.html">kontaktua</a>
     </ul>
 </nav>
 
@@ -55,7 +55,7 @@ menuBtn.addEventListener('click', () => {
 
         <form action="saskia.html" method="get">
 
-        <input type="submit" name="saskiragehitu" value="Saskira gehitu">
+        <input type="submit" value="Saskira gehitu">
         </form>
 
 
@@ -87,66 +87,68 @@ menuBtn.addEventListener('click', () => {
         max-width: 767px;
         padding: 15px;
         margin: 15px auto; 
-        border: 1px dotted black;
+        border: 1px #ccc solid;
+        border-radius: 10px;
+         background: #f8f8f8;
 
     }
     header{
-        padding: 1.95%;
-        margin: 1.95%; 
-        border: 1px dotted black;
-        width: 91.63%;
+         display: flex;
+        align-items: center;
+        gap: 200px;
+        padding: 10px;
+        margin: 2%;
+        border: 1px solid #ccc;
+        background: white;
+        border-radius: 10px;
     }
-
-     h1 {
-            margin: 0px;
-            float:right;
-            position: relative;
-            right: 450px;
-     }
     
-    .hamburgersa {
-    display: block;
-    width: 3.91%;
-    height: 3px;
-    background-color: rgb(255, 255, 255);
-    margin: 6px;
-    cursor: pointer;
-}
+    
+
  header img{
-            width: 150px;
+            width: 120px;
         }
 section{
-     border: 1px dotted rgb(255, 255, 255);
+        border: 1px dotted rgb(255, 255, 255);
         margin: 1.95%;
         background-color: #2c2a2a;
 }
 
 nav {
-    display: none; 
-    background-color: #ffffff;
-    max-width: 767px;
+        background-color: #ffffff;
         padding: 1.95% auto;
         margin: 1.95% auto; 
-        border: 1px dotted black;
+        border: 1px solid #ccc;
         width: 95.50%;
+         border-radius: 10px;
 }
 
 nav ul a {
-    display: block;
-    padding: 1.95% 0;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+        display: block;
+        padding: 1.95% 0;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
 }
 
 nav ul a:hover {
-    background-color: #ddd;
+        background-color: #ddd;
+}
+.hamburgersa {
+        display: block;
+        width: 3.91%;
+        height: 3px;
+        background-color: rgb(255, 255, 255);
+        margin: 6px;
+        cursor: pointer;
 }
 
 main{
         padding: 5px;
         margin: 1.95%; 
-        border: 1px dotted black;
+        border: 1px #ccc solid;
+        border-radius: 10px;
         width: 94.21%;
+        background: white;
       
     }
    
@@ -158,7 +160,11 @@ deskontua{
         
     
 
-   
+  a {
+    text-decoration: none;
+    color: #0059b3;
+    font-weight: bold;
+  } 
 
 
 main img{
@@ -170,10 +176,29 @@ main img{
 footer{
         padding: 0px;
         margin: 1.95%; 
-        border: 1px dotted black;
+        border: 1px #ccc solid;
+        border-radius: 10px;
         width: 95.50%;
+        background: white;
+    }
+ #menu-btn {
+    display: none;
+}
+
+nav {
+    display: block;
+}
+
+
+@media (max-width: 767px) {
+    #menu-btn {
+        display: block;
     }
 
+    nav {
+        display: none;
+    }
+}
 
 
     </style>

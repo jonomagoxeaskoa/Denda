@@ -94,28 +94,30 @@ menuBtn.addEventListener('click', () => {
         max-width: 767px;
         padding: 15px;
         margin: 15px auto; 
-        border: 1px dotted black;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background: #f8f8f8;
 
     }
     header{
-        padding: 1.95%;
-        margin: 1.95%; 
-        border: 1px dotted black;
-        width: 91.63%;
+        display: flex;
+        align-items: center;
+        gap: 200px;
+        padding: 10px;
+        margin: 2%;
+        border: 1px solid #ccc;
+        background: white;
+        border-radius: 10px;
     }
 
-     h1 {
-            margin: 0px;
-            float:right;
-            position: relative;
-            right: 450px;
-     }
-
-    
+    a {
+    text-decoration: none;
+    font-weight: bold;
+    }
     
 
  header img{
-            width: 150px;
+            width: 120px;
         }
 
      section{
@@ -125,12 +127,11 @@ menuBtn.addEventListener('click', () => {
 }
 
 nav {
-    display: none; 
-    background-color: #ffffff;
-    max-width: 767px;
-        padding: 1.95% auto;
-        margin: 1.95% auto; 
-        border: 1px dotted black;
+        display: none; 
+        background-color: #ffffff;
+        margin: 1.95%; 
+        border: 1px solid #ccc;
+        border-radius: 10px;
         width: 95.50%;
 }
 
@@ -154,15 +155,13 @@ nav ul a:hover {
     background-color: #ddd;
 }
 
-nav a{
-    margin:1.5%;
-}
-
 main{
         padding: 5px;
         margin: 1.95%; 
-        border: 1px dotted black;
+         border: 1px solid #ccc;
+        border-radius: 10px;
         width: 94.21%;
+         background: white;
       
     }
 main h2{
@@ -171,11 +170,32 @@ main h2{
 
 
 footer{
-        padding: 0px;
-        margin: 1.95%; 
-        border: 1px dotted black;
-        width: 95.50%;
+        background: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 2%;
+    border: 1px solid #ccc;
     }
+
+      #menu-btn {
+    display: none;
+}
+
+nav {
+    display: block;
+}
+
+
+@media (max-width: 767px) {
+    #menu-btn {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+}
 
 
 

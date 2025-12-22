@@ -19,7 +19,7 @@
     <ul>
         <a href="index.html">Hasiera</a>
         <a href="katalogoa.html">Katalogoa</a>
-        <a href="kontaktua.html">kontaktua</a>
+        <a href="kontaktua.html">Kontua</a>
     </ul>
 </nav>
 
@@ -38,33 +38,21 @@ menuBtn.addEventListener('click', () => {
 
 <main>
 
-    <h2> Eskaria </h2>
-    <h3> Ordainketa mota</h3>
+    <h2> kontaktua </h2>
+            <p>Zure izena:</p>
+               <p> <input type="text" name="izena:"> </p>
+            
+            <p>E-maila:</p>
+               <p> <input type="text" name="abizena:"> </p>
+            
+            <p>Mezua:</p>
+               <p> <input type="text" name="helbidea:"> </p>
 
+        </form>
 
-    <div class="ordainketa">
-        <label>
-            <input type="radio" name="ordainketa" value="paypal" required>
-            <img src="img/paypal.png" alt="PayPal">
-           
-        </label>
-    </div>
-
-    <div class="ordainketa">
-        <label>
-            <input type="radio" name="ordainketa" value="kreditu-txartela">
-             <img src="img/tarjeta.png" alt="tarjeta">
-        </label>
-    </div>
-
-    
-<form action="eskaria5.html" method="get">
-    <input type="submit" value="Hurrengoa"></form>
-
-</form>
-
-      
-             
+        <p> <form action="eskaria5.html" method="get">
+ <input type="submit" name="hurrengoa" value="Hurrengoa"></form>
+</p>
             
 
 </main>
@@ -91,12 +79,13 @@ menuBtn.addEventListener('click', () => {
 
 
     body{
-         max-width: 767px;
+        max-width: 767px;
         padding: 15px;
         margin: 15px auto; 
+        border: 1px dotted black;
+        background: #f8f8f8;
         border: 1px solid #ccc;
-        border-radius: 10px;
-    background: #f8f8f8;
+         border-radius: 10px;
     }
     header{
          display: flex;
@@ -109,7 +98,7 @@ menuBtn.addEventListener('click', () => {
         border-radius: 10px;
     }
  header img{
-            width: 150px;
+            width: 120px;
         }
 
      section{
@@ -122,11 +111,10 @@ nav {
     display: none; 
     background-color: #ffffff;
     max-width: 767px;
-    padding: 1.95% auto;
-    margin: 1.95% auto; 
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    width: 95.50%;
+        padding: 1.95% auto;
+        margin: 1.95% auto; 
+         border: 1px solid #ccc;
+        width: 95.50%;
 }
 
 .hamburgersa {
@@ -138,10 +126,6 @@ nav {
     cursor: pointer;
 }
 
-a {
-    text-decoration: none;
-    font-weight: bold;
-}
 nav ul a {
     display: block;
     padding: 1.95% 0;
@@ -153,43 +137,32 @@ nav ul a:hover {
     background-color: #ddd;
 }
 
+nav a{
+    margin:1.5%;
+}
 
 main{
-         padding: 5px;
+        padding: 5px;
         margin: 1.95%; 
-       border: 1px solid #ccc;
-        width: 94.21%;
         border-radius: 10px;
          background: white;
+        width: 94.21%;
+         border: 1px solid #ccc;
+      
     }
 main h2{
     text-decoration-line: underline;
 }
-.ordainketa {
-    margin: 10px;
-}
-
-.ordainketa label {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-}
-
-.ordainketa img {
-    width: 60px;
-}
 
 
 footer{
-    background: white;
+        background: white;
     padding: 10px;
     border-radius: 10px;
     text-align: center;
     margin: 2%;
     border: 1px solid #ccc;
     }
-
      #menu-btn {
     display: none;
 }
